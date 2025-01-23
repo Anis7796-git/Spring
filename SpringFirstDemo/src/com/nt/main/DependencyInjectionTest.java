@@ -17,7 +17,11 @@ public static void main(String[] args) {
 	
 	//get Target Spring bean class obj ref
 	
-	WishMessageGenerator generator=(WishMessageGenerator) ctx.getBean("wmg");
+	
+	
+	WishMessageGenerator generator= ctx.getBean("wmg",WishMessageGenerator.class);
+	
+
 	
 	//invok business method
 	String msg=generator.generateWishMessage("heena");

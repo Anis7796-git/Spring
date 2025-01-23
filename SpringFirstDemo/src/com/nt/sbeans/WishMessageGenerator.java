@@ -13,6 +13,17 @@ public class WishMessageGenerator {
 	private LocalDate ld;
 	
 	
+	@Autowired
+	public void setLt(LocalTime lt) {
+		this.lt = lt;
+	}
+
+	@Autowired
+	public void setLd(LocalDate ld) {
+		this.ld = ld;
+	}
+
+	
 	public WishMessageGenerator() {
 		System.out.println("WishMessageGenerator.WishMessageGenerator()");
 	}
