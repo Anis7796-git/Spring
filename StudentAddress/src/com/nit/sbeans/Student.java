@@ -8,51 +8,31 @@ public class Student {
 	public String name;
 	public Integer rollNumber;
 	public Address address;
-	
-    @Autowired
+
+	@Autowired
 	public Student(Address address) {
-		this.address=address;
+		this.address = address;
 	}
-    
-    
-	
-	
-public Student() {
+
+	public Student() {
 		super();
 	}
 
-
-
-
-public void setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
-
-
-
 
 	public void setRollNumber(Integer rollNumber) {
 		this.rollNumber = rollNumber;
 	}
 
-
-
-
 	public void setAddress(Address address) {
 		this.address = address;
 	}
 
-
-
-
-public void displayStudentDetails() {
-		System.out.println("Name : "+name+"\n"+"RollNumber : "+rollNumber);
+	public void displayStudentDetails() {
+		System.out.println("Name : " + name + "\n" + "RollNumber : " + rollNumber);
 		address.displayStudentDetails();
 	}
-
-
-
-
-
 
 }
