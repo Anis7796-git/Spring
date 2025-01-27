@@ -27,7 +27,7 @@ public class AppConfig {
 	}
 	@Bean(name="lDate")
 	public LocalDate createDate() {
-		System.out.println("AppConfig.createDate()");
+		System.out.println("AppConfig.createDate()"+LocalDate.now());
 		
 		return LocalDate.now();
 	}
